@@ -19,7 +19,7 @@ namespace phone_number
             string numbers = Regex.Replace(unusable, "[^.0-9]", "");
             //set formated phone number as blank
             string phone = "";
-            //check for country code or raise exception if the number's aren't right
+            //check for country code or raise exception if the numbers aren't right
             if (numbers.Length == 11) {
                 phone = "+" + numbers[0] +" ";
                 //remove country code so that the rest of the parsing code runs
